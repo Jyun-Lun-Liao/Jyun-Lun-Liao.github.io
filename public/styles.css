@@ -1,0 +1,198 @@
+/* 基本樣式 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffafa;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+/* 表單樣式 */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 20px; /* 為表單左右添加20px的內邊距，避免內容碰到邊緣 */
+    max-width: 600px; /* 可選：設置最大寬度，防止表單過寬 */
+    margin: 0 auto; /* 讓表單居中 */
+}
+
+#vocabulary-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: large;
+}
+
+/* 設定所有單字項目的樣式 */
+.vocabulary-item {
+    margin-bottom: 15px; /* 每個單字項目的間距 */
+    padding: 10px; /* 每個項目的內邊距 */
+    border: 1px solid #ddd; /* 項目邊框 */
+    border-radius: 3px; /* 項目圓角 */
+    background-color: #ffffff; /* 單字項目背景 */
+}
+
+/* 語音 */
+.vocabulary-list .speech {
+    color: blue; /* 語音的顏色 */
+    font-weight: bold; /* 加粗 */
+    display: inline; /* 行內顯示 */
+}
+
+/* 定義 */
+.vocabulary-item .definition {
+    color: green; /* 定義的顏色 */
+    font-style: italic; /* 斜體 */
+    display: inline; /* 行內顯示 */
+}
+
+/* 錯誤計數 */
+.vocabulary-item .errorcount {
+    color: red; /* 錯誤計數的顏色 */
+    font-weight: bold; /* 加粗 */
+    display: inline; /* 行內顯示 */
+}
+
+/* 解釋 */
+.vocabulary-item .explain {
+    color: gray; /* 解釋的顏色 */
+    margin-top: 5px; /* 上方間距 */
+    display: none; /* 初始隱藏 */
+}
+
+/* 額外的按鈕樣式 */
+.vocabulary-item button {
+    background-color: lightgray; /* 按鈕背景顏色 */
+    color: black; /* 按鈕文字顏色 */
+    border: none; /* 無邊框 */
+    padding: 5px 10px; /* 按鈕內邊距 */
+    cursor: pointer; /* 鼠標懸停時為指針 */
+}
+
+.vocabulary-item button:hover {
+    background-color: darkgray; /* 懸停時變色 */
+}
+
+#result {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: large;
+}
+
+.header {
+    display: flex; /* 使用 flex 布局 */
+    justify-content: center; /* 水平居中 h2 和按鈕 */
+    align-items: center; /* 垂直居中 h2 和按鈕 */
+    gap: 10px; /* 可選：控制 h2 和按鈕之間的距離 */
+}
+
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#library-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 20px; /* 為表單左右添加20px的內邊距，避免內容碰到邊緣 */
+    max-width: 600px; /* 可選：設置最大寬度，防止表單過寬 */
+    margin: 0 auto; /* 讓表單居中 */
+    font-size: large;
+}
+
+#quiz-percentage {
+    display: flex;
+    flex-direction: wrap;
+    gap: 15px;
+    padding: 0 20px; /* 為表單左右添加20px的內邊距，避免內容碰到邊緣 */
+    max-width: 600px; /* 可選：設置最大寬度，防止表單過寬 */
+    margin: 0 auto; /* 讓表單居中 */
+    font-size: large;
+}
+
+/* 按鈕組樣式 */
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* 測驗頁面樣式 */
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 20px; /* 為表單左右添加20px的內邊距，避免內容碰到邊緣 */
+    max-width: 600px; /* 可選：設置最大寬度，防止表單過寬 */
+    margin: 0 auto; /* 讓表單居中 */
+    font-size: large;
+}
+
+.quiz-question {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 20px; /* 為表單左右添加20px的內邊距，避免內容碰到邊緣 */
+    max-width: 600px; /* 可選：設置最大寬度，防止表單過寬 */
+    margin: 0 auto; /* 讓表單居中 */
+    font-size: large;
+}
+
+.quiz-question p {
+    font-size: 18px;
+    color: #272727;
+}
+
+.quiz-question input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #fffafa;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #272727;
+        color: #fffafa;
+    }
+    h1, h2 {
+        color:#fffafa;
+    }
+    .quiz-question p {
+        color:#fffafa;
+    }
+    .quiz-question input[type="text"] {
+        color:#333;
+        background-color: #fffafa;
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vocabulary web</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="libraryname-title"></h1>
+
+  <!-- 新增單字表單 -->
+  <h2>Add a new word</h2>
+  <form id="add-word-form">
+    <input type="text" id="word" placeholder="Word" autocomplete="off"><br>
+    <input type="text" id="speech" placeholder="part of speech" autocomplete="off"><br>
+    <input type="text" id="definition" placeholder="Definition" autocomplete="off"><br>
+    <input type="text" id="explain" placeholder="Explain" autocomplete="off"><br>
+    <button id="submit">Add Word</button>
+  </form>
+  <h2>Word List</h2>
+  <div class="header">
+    <button id="sorterrorcount">sort error</button>
+    <button id="A-Z">sort A-Z</button>
+    <button id="show-all-definitions">Show All Definitions And Explains</button>
+    <button id="edit">edit</button>
+    <button id="goback">back</button>
+  </div>
+  <br>
+  <!--<div class="button-group">
+    <button id="fetch-vocabulary">Fetch Vocabulary</button>
+    <button id="edit">edit</button>
+  </div>-->
+  <div id="vocabulary-list"></div>
+
+  <script src="wordlist.js"></script>
+</body>
+</html>

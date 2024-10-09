@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Vocabulary Library</h1>
+    <h2>Vocabulary Quiz</h2>
+    <div class="header">
+        <button id="gowordquiz">Word Quiz</button>
+        <button id="godefinitionquiz">Definition Quiz</button>
+        <button id="goexplainquiz">Explain Quiz</button>
+    </div>
+    <br>
+    <div id="quiz-percentage">
+        <label>
+            <input type="radio" name="quiz-percentage" value="10"> 10%
+        </label>
+        <label>
+            <input type="radio" name="quiz-percentage" value="25"> 25%
+        </label>
+        <label>
+            <input type="radio" name="quiz-percentage" value="50"> 50%
+        </label>
+        <label>
+            <input type="radio" name="quiz-percentage" value="75"> 75%
+        </label>
+        <label>
+            <input type="radio" name="quiz-percentage" value="100"> 100%
+        </label>
+    </div>
+    <br>
+    <!-- 表單區域，輸入單字庫名稱 -->
+    <form id="add-library-form">
+        <input type="text" id="libraryname" placeholder="Enter Library Name" autocomplete="off" required>
+        <button id="addLibrary" type="submit">Add Library</button>
+    </form>
+    <br>
+    <div class="header">
+        <button id="edit-libraries">Edit</button>
+    </div>
+    <div id="library-buttons"></div>
+    <br>
+    <!-- 用於顯示動態生成的單字庫按鈕 -->
+    <div id="library-buttons">
+        <!-- 動態生成的按鈕會顯示在這裡 -->
+    </div>
+    <script src="libraries.js"></script>
+</body>
+
+</html>
